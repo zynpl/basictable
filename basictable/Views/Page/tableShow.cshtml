@@ -1,0 +1,21 @@
+﻿@model basictable.Models.Exam
+@{
+    ViewData["Title"] = "tableShow";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>tableShow</h1>
+
+@using (Html.BeginForm("tUpdate", "Page", FormMethod.Post))
+{
+    <b>Id</b>
+    @Html.TextBoxFor(x => x.id, new { @class = "form" })
+
+    <b>Id</b>
+    @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
+    <b>Id</b>
+    @Html.TextBoxFor(x => x.surname, new { @class = "form-control" })
+
+    <br />
+    <button>Güncelle</button>
+}
